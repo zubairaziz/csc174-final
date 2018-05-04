@@ -1,1 +1,1 @@
-# csc174-final
+# CSC 174 - Final Project
