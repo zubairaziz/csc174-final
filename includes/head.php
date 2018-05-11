@@ -1,7 +1,7 @@
 <?php
 
 $page = $_SERVER[REQUEST_URI];
-$page = str_replace("/csc174/final/", "", $page);
+$page = str_replace("/csc174/csc174-final/", "", $page);
 
 switch ($page) {
     case '':
@@ -16,8 +16,8 @@ switch ($page) {
     case 'romantic.php':
         $title = "Romantic";
         break;
-    case 'contact.php':
-        $title = "Contact";
+    case 'survey.php':
+        $title = "Survey";
         break;
     case 'admin.php':
         $title = "Admin";

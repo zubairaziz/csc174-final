@@ -43,7 +43,13 @@ nav {
 	border-bottom: 1px solid #000;
 }
 
+.clear-fix {
+	height: 400px;
+	clear: both;
+}
+
 footer {
+	clear: both;
 	background-color: #5f4938;
 	border-top: 1px solid #000;
 	position: static;
@@ -61,6 +67,18 @@ a {
 	color: #ceb275;
 }
 
+figure {
+	float: right;
+	border: 1px solid #5f4938;
+	text-align: center;
+	margin: 12px;
+	background-color: #fff;
+}
+
+img {
+	max-width: 300px;
+}
+
 .container {
 	margin-top: 1em;
 	border: 1px solid #000;
@@ -69,7 +87,7 @@ a {
 }
 
 /*	*******************************************
-    LAYOUTS
+    HOME LAYOUT
 ******************************************* */
 
 main {
@@ -95,6 +113,8 @@ main {
 	grid-area: item-3;
 	align-self: center;
 	justify-self: center;
+	/* align-items: end;
+	justify-items: end; */
 }
 
 .item-4 {
@@ -117,4 +137,76 @@ main {
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
 	grid-template-areas: "item-1 . item-2" ". item-3 ." "item-4 . item-5";
+}
+
+/*	*******************************************
+    ARTICLE LAYOUT
+******************************************* */
+
+section {
+	grid-area: top;
+}
+
+article {
+	grid-area: left;
+}
+
+aside {
+	grid-area: right;
+}
+
+.grid {
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 3fr 2fr;
+	grid-template-areas: "top top" "left right";
+	grid-gap: 10px;
+}
+
+/*	*******************************************
+    HOMEPAGE STYLES
+******************************************* */
+
+.main-title {
+	width: 500px;
+	height: 300px;
+	background-image: url("../images/classical.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	border: 2px solid #000;
+}
+
+.main-title a {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	color: #fff;
+	text-shadow: 2px 2px 3px #000;
+}
+
+/*	*******************************************
+	NAVIGATION
+******************************************* */
+
+#navbar a.active {
+	border-radius: 0;
+	background-color: #ddcba4;
+	color: #5f4938;
+}
+
+/*	*******************************************
+	ADMIN TABLE
+******************************************* */
+
+table.table-boredered,
+th,
+td {
+	border: 1px solid #000;
+}
+
+th {
+	background-color: #5f4938;
 }

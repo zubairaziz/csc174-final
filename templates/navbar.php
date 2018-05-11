@@ -12,7 +12,8 @@
             <a class="nav-link" href="romantic.php">Romantic</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="contact.php"><i class="fa fa-envelope"></i>
+            <a class="nav-link" href="survey.php">
+                <i class="fa fa-envelope"></i>
                 Survey</a>
         </li>
         <li class="nav-item dropdown">
@@ -23,7 +24,7 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <?php
 
-if (isset($_SESSION['username'])) {
+if (isset($_SESSION['user_session'])) {
     echo "
     <a class='dropdown-item' href='admin.php'>Admin</a>
     <a class='dropdown-item' href='logout.php'>Logout</a>

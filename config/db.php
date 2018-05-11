@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 define('DB_SERVER', 'localhost');
 define('DB_USERNAME', 'urcscon3_zabaziz');
 define('DB_PASSWORD', 'zabaziz1');
@@ -16,6 +18,7 @@ $dsn = "mysql:host=$server;dbname=$db";
 try {
     // create a PDO connection with the configuration data
     $connect = new PDO($dsn, $username, $password);
+    $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     // display a message if connected to database successfully
     // if ($connect) {
@@ -25,3 +28,6 @@ try {
     // report error message
     echo $e->getMessage();
 }
+
+include_once 'class.user.php';
+$user = new USER($connect);

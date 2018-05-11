@@ -14,33 +14,35 @@ require_once "includes/head.php";
 
 ?>
 
-			<main class="grid">
+			<main class="grid home-text">
 
 				<div class="item-1">
-					<a href="index.php">
+					<a class="btn btn-dark btn-lg" href="index.php">
 						<i class="fas fa-music"></i> Home
 					</a>
 				</div>
 
 				<div class="item-2">
-					<a href="login.php">Login</a>
+					<a class="btn btn-dark btn-lg" href="login.php">
+						<i class="fas fa-sign-in-alt"></i> Login</a>
 				</div>
 
-				<div class="item-3">
-					<a href="index.php">
-						<h1 class="title">
+				<div class="item-3 main-title">
+					<a class="" href="index.php">
+						<h1>
 							Classical Music
 						</h1>
-						<p class="subtitle">Baroque &amp; Romantic Periods</p>
+						<p class="lead">The Baroque and Romantic period.</p>
 					</a>
 				</div>
 
 				<div class="item-4">
-					Wiki page for classical music
+					<a class="btn btn-dark btn-lg" href="https://en.wikipedia.org/wiki/Classical_music">
+						<i class="fab fa-wikipedia-w"></i> Wiki</a>
 				</div>
 
 				<div class="item-5">
-					<a class="button" href="baroque.php">Learn about music starting from the Baoque period</a>
+					<a class="btn btn-warning btn-lg" href="baroque.php">Learn more here!</a>
 				</div>
 
 			</main>
