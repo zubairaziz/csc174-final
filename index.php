@@ -14,7 +14,7 @@ require_once "includes/head.php";
 
 ?>
 
-			<main class="grid home-text">
+			<main class="home-grid home-text">
 
 				<div class="item-1">
 					<a class="btn btn-dark btn-lg" href="index.php">

@@ -69,7 +69,7 @@ if (isset($error)) {
 						<?php
 }
 ?>
-				<form action="<?php echo htmlspecialchars($_SERVER[" PHP_SELF "]); ?>" method="POST">
+						<form action="<?php echo htmlspecialchars($_SERVER[" PHP_SELF "]); ?>" method="POST">
 
 							<div class="form-group">
 								<label for="name">Name: </label>
@@ -97,11 +97,13 @@ if (isset($error)) {
 							<div class="form-group">
 								<label>What's your favorite genre of music?</label>
 								<select class="form-control" name="genre">
+									<option value="alternative">alternative</option>
 									<option value="blues">blues</option>
 									<option value="classical">classical</option>
 									<option value="country">country</option>
 									<option value="folk">folk</option>
 									<option value="hip-hop">hip-hop</option>
+									<option value="indie">indie</option>
 									<option value="jazz">jazz</option>
 									<option value="rock">rock</option>
 									<option value="r&amp;b">r&amp;b</option>
@@ -116,14 +118,14 @@ if (isset($error)) {
 
 							<br>
 
-							</form>
+						</form>
 
 			</div>
 
 
 			<div class="clear-fix">
 
-</div>
+			</div>
 
 			<?php
 

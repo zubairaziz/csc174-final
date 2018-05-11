@@ -1,25 +1,25 @@
 <?php
 
 $page = $_SERVER[REQUEST_URI];
-$page = str_replace("/csc174/csc174-final/", "", $page);
+$page = str_replace('csc174-final/', '', $page);
 
 switch ($page) {
     case '':
         $title = "Home";
         break;
-    case 'baroque.php':
+    case '/baroque.php':
         $title = "Baroque";
         break;
-    case 'classical.php':
+    case '/classical.php':
         $title = "Classical";
         break;
-    case 'romantic.php':
+    case '/romantic.php':
         $title = "Romantic";
         break;
-    case 'survey.php':
+    case '/survey.php':
         $title = "Survey";
         break;
-    case 'admin.php':
+    case '/admin.php':
         $title = "Admin";
         break;
     default:
